@@ -42,19 +42,31 @@ TYPE YOUR CODE HERE
 SHOW YOUR OUTPUT HERE
 
 ## RESULT:
-Thus the program has been executed by using CUDA to ________________.
+Thus, the program has been executed successfully using CUDA to perform Sobel edge detection on an image using GPU parallel processing.
+Answers to the Questions
 
-Questions:
+1. What challenges did you face while implementing the Sobel filter for color images?
+- Handling RGB channels separately was challenging.
+- Converting the color image into grayscale was necessary.
+- Managing pixel boundaries and memory allocation was difficult.
+2. How did changing the block size influence the performance of your CUDA implementation?
+- Smaller block sizes may increase execution overhead.
+- Larger block sizes can improve parallel processing.
+- The best block size depends on GPU resources and image size.
+3. What were the differences in output between the CUDA and CPU implementations? Discuss any discrepancies.
+- Both implementations produced similar edge-detection results.
+- CUDA executed faster due to parallel processing.
+- Minor differences may occur due to rounding and pixel calculations.
+4. Suggest potential optimizations for improving the performance of the Sobel filter.
+- Use shared memory to reduce global memory access.
+- Optimize CUDA block and grid dimensions.
+- Reduce unnecessary memory transfers.
+- Process multiple pixels in parallel.
 
-What challenges did you face while implementing the Sobel filter for color images?
-How did changing the block size influence the performance of your CUDA implementation?
-What were the differences in output between the CUDA and CPU implementations? Discuss any discrepancies.
-Suggest potential optimizations for improving the performance of the Sobel filter.
-
-Deliverables:
-
-Modified CUDA code with comments explaining your changes.
-A report summarizing your findings, including graphs of execution times and a comparison of outputs.
-Answers to the questions posed in the experiment.
-Tools Required:
-
+### Tools Required:
+1. NVIDIA CUDA Toolkit
+2. NVIDIA GPU
+3. Google Colab
+4. C/C++ compiler (NVCC)
+5. OpenCV library
+6. Python and Matplotlib
