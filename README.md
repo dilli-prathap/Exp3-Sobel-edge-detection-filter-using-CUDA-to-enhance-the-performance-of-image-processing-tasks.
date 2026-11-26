@@ -170,8 +170,11 @@ int main() {
 
 
 ## RESULT:
+
+Total time taken: **0.103680** milliseconds.
 Thus, the program has been executed successfully using CUDA to perform Sobel edge detection on an image using GPU parallel processing.
-Answers to the Questions
+
+### Answers to the Questions
 
 1. What challenges did you face while implementing the Sobel filter for color images?
 - Handling RGB channels separately was challenging.
